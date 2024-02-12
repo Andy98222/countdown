@@ -112,8 +112,13 @@ function formatNumber(number) {
   }
 }
 
+function initImage(){
+  var img = document.querySelector(".image");
+  img.style.backgroundImage = img2;
+}
 //Run
 countdownTimer();
+initImage();
 
 
 changeOpacity();
