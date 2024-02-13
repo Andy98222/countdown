@@ -118,7 +118,12 @@ body {
 
 
     object-fit: contain;
-    
+  
+  }
+  .container{
+    position: relative;
+    bottom: 55px;
+
   }
   .container ul{
 
