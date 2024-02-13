@@ -94,19 +94,20 @@ body {
   display: none;
 }
 .image {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0),#101010),
   url("https://images.hdqwalls.com/download/final-fantasy-vii-rebirth-uh-1920x1080.jpg");
   background-position: center center;
   align-items: center center;
   justify-content: center center;
   background-size:cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: fit-content;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
   padding-top: 200px;
   padding-bottom:200px;
-
-  margin-top: 40px;
+  background-color: #101010;
+  margin-top: 10px;
   
 
 }
@@ -118,8 +119,8 @@ body {
   .image{
 
 
-    object-fit: contain;
-    height: fit-content;
+    background-size:contain;
+    background-repeat: no-repeat;
   
   }
   .container{
@@ -155,8 +156,10 @@ body {
   }
   
   .image{
-    object-fit: cover;
-    height: fit-content;
+    width: 100%;
+  height: fit-content;
+
+    
     
   }
  
