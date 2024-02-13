@@ -1,21 +1,20 @@
 @font-face {
-  font-family: 'font';
+  font-family: "font";
   src: URL("square-sans-serif-7.regular.ttf");
 }
 
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
-
-
   margin: 0;
-  font-family: 'Orbitron';
-background-color:  	#101010;
-background-size: cover;
+  font-family: "Orbitron";
+  background-color: #101010;
+  background-size: cover;
   background-position: center;
+  
   /*min-height: 100vh;
   width: 100%;
  
@@ -25,149 +24,192 @@ background-size: cover;
   align-items: center;
   justify-content: center;
   */
- 
 }
-.header{
-position: fixed;
-top:0;
-left:0;
-width: 100%;
-padding: 1.3rem 10%;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
 
- 
-display: flex;
-justify-content: space-between;
-align-items: center;
-z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
-.header::before{
-  content:'';
+.header::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  background:rgb(255, 117, 24);
-backdrop-filter: blur(50px);/*se togli è bello :)*/
-z-index: -1;
+  background: rgb(255, 117, 24);
+  backdrop-filter: blur(50px); /*se togli è bello :)*/
+  z-index: -1;
 }
-.header::after{
-  content:'';
+.header::after {
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
 
-  background:linear-gradient(90deg, transparent,rgb(255, 117, 24,transparent));
-  transition: .5;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255, 117, 24, transparent)
+  );
+  transition: 0.5;
 }
-.header:hover::after{
+.header:hover::after {
   left: 100%;
 }
-.logo{
+.logo {
   font-size: 2rem;
   color: white;
   text-decoration: none;
   font-weight: 700;
 }
-.navbar a{
+.navbar a {
   justify-content: right;
   font-size: 1.15rem;
   color: white;
   text-decoration: none;
   font-weight: 500;
-  margin-left:2.5rem;
-
+  margin-left: 2.5rem;
 }
 
-.icons{
+.icons {
   position: absolute;
   font-size: 2.8rem;
   color: white;
   cursor: point;
   display: none;
-  right:5%;
+  right: 5%;
 }
-#check{
+#check {
   display: none;
 }
 .image {
-  margin-top:100px;
-  margin-left: 200px;
-  margin-right: 200px;
- /* background-color: green;*/
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
+  url("https://images.hdqwalls.com/download/final-fantasy-vii-rebirth-uh-1920x1080.jpg");
   background-position: center center;
-background-repeat: no-repeat;
-  padding-top:150px;
-  padding-bottom: 150px;
-  opacity: 0.5;
-  background-size: cover;
-   border-radius: 10px;
+  align-items: center center;
+  justify-content: center center;
+  background-size:cover;
+  height: auto;
+  width: 100%;
+
+  padding-top:250px;
+  padding-bottom:250px;
+  margin-top: 150px;
+  
+
 }
-@media(max-width: 992px){
-  .header{
+@media (max-width: 992px) {
+  .header {
     padding: 1.3rem 5%;
   }
 }
-@media (max-width: 768px){
-.icons{
-  display: inline-flex;
-}
-#check:checked~.icons #menu-icon{
-  display: none;
-}
-.icons #close-icon{
-  display: none;
-}
+@media only screen and (max-width: 480px) {
 
-#check:checked~.icons #close-icon{
-  display: block;
 }
-
-.navbar{
-  position: absolute;
-  top:100%;
-  left:0;
-  width: 100%;
-  height: 0;
+@media (max-width: 300px) {
+  .icons {
+    display: inline-flex;
+  }
+  .image{
+ 
+ 
+  color: blue;
   
-  background:rgba(255, 117, 24,0.1);
-  box-shadow:  0 .5rem 1rem rgba(255, 117, 24,0.1);
-  transition: .3s ease;
-  overflow: hidden;
-}
-#check:checked~.navbar{
-  height: 17.7rem
-}
-.navbar a{
-  display: block;
-  font-size:1.1rem;
-  margin: 1.5rem 0;
-text-align: center;
-transform: translateY(-50px);
-transition: .3s ease;
-opacity: 0;
+  
+  }
+  #headline{
+    font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  align-items: center center;
+  justify-content: center center;
 
-}
-#check:checked~.navbar a{
-  transform: translateY(0);
-  transition-delay: calc(.15s* var(--i));
-  opacity: 1;
-}
-}
+  }
+  .time{
+    display: flex;
+    font-size: 3rem;
+    color: rgb(255, 117, 24);
+    font-family: "Orbitron";
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .counters {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 0.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    filter: opacity(100%);
+  }
+ 
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
 
 
-.container{
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+
+    background: rgba(255, 117, 24, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(255, 117, 24, 0.1);
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+  #check:checked ~ .navbar {
+    height: 17.7rem;
+  }
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    transition-delay: calc(0.15s * var(--i));
+    opacity: 1;
+  }
+}
+
+.container {
   max-width: 960px;
-  margin-top:50px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 /*nav {
@@ -191,25 +233,25 @@ nav {
   align-items: center;
   gap: 1.5rem;
   font-size: 2rem;
-
 }
 
 h1 {
-align-items: center;
+  align-items: center;
   justify-content: center;
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color:white;
- 
+  color: white;
+  mix-blend-mode: hard-light;
+  filter: opacity(100%);
 }
 
 li span {
   display: flex;
   font-size: 5rem;
   color: rgb(255, 117, 24);
-  font-family: 'Orbitron';
+  font-family: "Orbitron";
   width: 10rem;
   justify-content: center;
   align-items: center;
@@ -223,8 +265,8 @@ li span {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
- color:white;
- 
+  color: white;
+  filter: opacity(100%);
 }
 
 li.separator {
@@ -233,7 +275,7 @@ li.separator {
   font-size: 7rem;
   line-height: 1;
   color: red;
-  font-family: 'Orbitron';
+  font-family: "Orbitron";
 }
 
 li:first-of-type {

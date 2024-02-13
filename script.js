@@ -118,10 +118,10 @@ function initImage(){
 }
 //Run
 countdownTimer();
-initImage();
 
 
-changeOpacity();
+
+
 
 
 
