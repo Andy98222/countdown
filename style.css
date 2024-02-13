@@ -128,9 +128,14 @@ body {
     background-size:cover; /* Adjust background size to be 90% of the container width */
     padding-top: 30%; /* Adjust padding to maintain aspect ratio and center the container */
     padding-bottom: 30%;
+
   }
   .container {
+position: relative;
+top: 250px;
+
   }
+  
 
   #check:checked ~ .icons #menu-icon {
     display: none;
