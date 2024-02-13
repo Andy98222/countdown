@@ -99,15 +99,14 @@ body {
   background-position: center center;
   align-items: center center;
   justify-content: center center;
-  background-size:cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  background-size: cover;
+  max-width:100%;
+  height: auto;;
+  object-fit: scale-down;
   padding-top: 200px;
   padding-bottom:200px;
   background-color: #101010;
-  margin-top: 10px;
+  margin-top: 50px;
   
 
 }
@@ -119,8 +118,7 @@ body {
   .image{
 
 
-    background-size:contain;
-    background-repeat: no-repeat;
+    
   
   }
   .container{
@@ -156,11 +154,11 @@ body {
   }
   
   .image{
-    width: 100%;
-  height: fit-content;
+ 
 
-    
-    
+
+  }
+  .container{
   }
  
  
@@ -220,7 +218,7 @@ body {
   padding-right: 1rem;
  
   text-align: center !important;
-  bottom: 100px;
+ 
 
 
 }
