@@ -100,9 +100,9 @@ body {
   align-items: center center;
   justify-content: center center;
   background-size:cover;
-  height: auto;
   width: 100%;
-  object-fit: cover;
+  height: 720px;
+  object-fit: contain;
   padding-top:250px;
   padding-bottom:250px;
   margin-top: 150px;
@@ -116,8 +116,8 @@ body {
    
   .image{
 
-object-fit: fill;
 
+    object-fit: contain;
     
   }
   .container ul{
@@ -150,7 +150,8 @@ object-fit: fill;
   }
   
   .image{
-    object-fit: fill;
+    object-fit: contain;
+    height: 300px;
   }
  
  
