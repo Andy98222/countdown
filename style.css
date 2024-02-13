@@ -108,7 +108,7 @@ body {
   }
   .container h1 {
     text-align: center !important;
-
+   
     font-size: 1rem;
   }
   .counters li span {
@@ -125,8 +125,9 @@ body {
   }
 
   .image {
-     background-size: contain;
-     background-repeat: no-repeat;
+    background-size:cover; /* Adjust background size to be 90% of the container width */
+    padding-top: 30%; /* Adjust padding to maintain aspect ratio and center the container */
+    padding-bottom: 30%;
   }
   .container {
   }
