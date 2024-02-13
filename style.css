@@ -14,16 +14,6 @@ body {
   background-color: #101010;
   background-size: cover;
   background-position: center;
-
-  /*min-height: 100vh;
-  width: 100%;
- 
-  
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  */
 }
 .header {
   position: fixed;
@@ -102,33 +92,29 @@ body {
   background-size: cover;
   max-width: 100%;
   height: auto;
-  object-fit: scale-down;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #101010;
   margin-top: 50px;
+  
 }
 @media (max-width: 992px) {
   .header {
     padding: 1.3rem 5%;
   }
 
-  .image {
-  }
-  .container {
-  }
   .container ul {
     font-size: 0.5rem;
   }
   .container h1 {
     text-align: center !important;
 
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .counters li span {
     text-align: center !important;
 
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 5rem;
   }
 }
@@ -139,6 +125,8 @@ body {
   }
 
   .image {
+     background-size: contain;
+     background-repeat: no-repeat;
   }
   .container {
   }
