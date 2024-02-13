@@ -84,8 +84,8 @@ body {
   display: none;
 }
 .image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), #101010),
-    url("https://images.hdqwalls.com/download/final-fantasy-vii-rebirth-uh-1920x1080.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #101010),
+    url("https://images.hdqwalls.com/download/final-fantasy-vii-remake-and-rebirth-r4-1920x1080.jpg");
   background-position: center center;
   align-items: center center;
   justify-content: center center;
