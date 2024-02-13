@@ -113,6 +113,13 @@ body {
   .header {
     padding: 1.3rem 5%;
   }
+   
+  .image{
+
+object-fit: fill;
+
+    
+  }
   .container ul{
 
     
@@ -142,6 +149,9 @@ body {
     display: inline-flex;
   }
   
+  .image{
+    object-fit: fill;
+  }
  
  
  
