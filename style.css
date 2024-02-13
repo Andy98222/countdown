@@ -102,7 +102,7 @@ body {
   background-size:cover;
   height: auto;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   padding-top:250px;
   padding-bottom:250px;
   margin-top: 150px;
