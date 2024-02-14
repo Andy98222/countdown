@@ -1,3 +1,6 @@
+:root{
+  --main: #101010;
+}
 @font-face {
   font-family: "font";
   src: URL("square-sans-serif-7.regular.ttf");
@@ -7,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 body {
   margin: 0;
@@ -59,23 +63,23 @@ body {
 }
 .logo {
   font-size: 2rem;
-  color: white;
+  color: #101010;
   text-decoration: none;
   font-weight: 700;
 }
 .navbar a {
   justify-content: right;
   font-size: 1.15rem;
-  color: white;
+  color: #101010;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 2.5rem;
 }
 
 .icons {
   position: absolute;
   font-size: 2.8rem;
-  color: white;
+  color: #101010;
   cursor: point;
   display: none;
   right: 5%;
@@ -96,7 +100,6 @@ body {
   padding-bottom: 200px;
   background-color: #101010;
   margin-top: 50px;
-  
 }
 @media (max-width: 992px) {
   .header {
@@ -108,7 +111,7 @@ body {
   }
   .container h1 {
     text-align: center !important;
-   
+
     font-size: 1rem;
   }
   .counters li span {
@@ -125,17 +128,14 @@ body {
   }
 
   .image {
-    background-size:cover; /* Adjust background size to be 90% of the container width */
+    background-size: cover; /* Adjust background size to be 90% of the container width */
     padding-top: 30%; /* Adjust padding to maintain aspect ratio and center the container */
     padding-bottom: 30%;
-
   }
   .container {
-position: relative;
-/*top: 160px;*/
-
+    position: relative;
+    /*top: 160px;*/
   }
-  
 
   #check:checked ~ .icons #menu-icon {
     display: none;
@@ -267,4 +267,112 @@ li:first-of-type {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+/*HOME*/
+
+.container_home {
+  display: flex;
+  background-color: red;
+
+}
+.container_left {
+  margin-top: 10px;
+  display: block;
+  background-color: aquamarine;
+}
+.ending_heading {
+ 
+  position: relative;
+  margin-top: 10%;
+  
+  font-size: 1.5rem;
+  background-color: blue;
+  color: white;
+  height: 30px;
+  max-width: 500px;
+}
+.ending_grid {
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 5%;
+  display: grid;
+  margin-top: 5%;
+  grid-template-columns: repeat(
+    4,
+    200px); /* Quattro colonne con dimensioni flessibili */
+  grid-template-rows: 200px;
+  gap: 10px;
+  list-style: none;
+}
+
+.ending_grid_item {
+  background-color: #c209e7;
+
+}
+@media screen and (max-width: 768px) {
+  .container_home {
+    justify-content: flex-start; /* Align children to the start (left) */
+    transition: justify-content 1s ease;
+  
+  }
+  .container_left {
+   
+  }
+  .ending_grid {
+   
+    grid-template-columns: repeat(
+      1,
+      200px); /* Quattro colonne con dimensioni flessibili */
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+    list-style: none;
+    margin-top: 15%;
+    transition: grid-template-columns 0.7s ease-in-out, margin-top 0.7s  ease-in-out; /* Add transition effects */
+  }
+  .ending_heading {
+    text-align: left; /* Align text to the left */
+    margin-top: 45%; /* Adjust margin-top as needed */
+    transition: margin-top 0.3s ease; /* Add transition effect */
+  }
+  
+    
+}
+/*Create*/
+
+.container_create{
+  display: flex;
+  justify-content: center;
+  color: white;
+ 
+}
+
+form {
+  justify-content: center  center;
+  margin: 300px;
+  max-width: 400px;
+
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
